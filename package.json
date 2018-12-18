@@ -1,0 +1,33 @@
+{
+  "name": "@mojule/wrap-text",
+  "version": "0.1.0",
+  "description": "Wrap text to a given width",
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "tsc && mocha ./dist/test",
+    "coverage": "tsc && nyc --reporter=html --reporter=text mocha ./dist/test"
+  },
+  "nyc": {
+    "exclude": [
+      "./dist/test"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mojule/wrap-text.git"
+  },
+  "keywords": [],
+  "author": "Nik Coughlin <nrkn.com@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mojule/wrap-text/issues"
+  },
+  "homepage": "https://github.com/mojule/wrap-text#readme",
+  "devDependencies": {
+    "@types/mocha": "^5.2.5",
+    "@types/node": "^10.12.12",
+    "mocha": "^5.2.0"
+  }
+}
